@@ -1,0 +1,330 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: .5px;
+}
+
+/* Smoothy Scroll */
+html{
+    scroll-behavior: smooth;
+}
+.main {
+    position: relative; 
+    height: 50vh;
+    width: 100%;
+    display: flex;
+  
+}
+
+.main::before {    
+      content: "";
+      background-image: url(./photos/newCover.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: absolute;
+      
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.6;
+}
+.main .container-fluid{
+    position: relative;
+    color: #000;  
+    font-size: 14rem;
+    line-height: 0.9;
+    text-align: center;
+
+}
+.main .textbox{
+    position:relative;
+    padding-top: 10%;
+    /* padding-bottom: 0; */
+    /* text-align: center; */
+    /* z-index: 2; */
+}
+.main .textbox h1{
+    font-size: 3rem;
+    color: #da6f68;
+    /* padding: 1%; */
+}
+.main .textbox h5{
+    font-size: 2rem;
+    /* display:inline; */
+}
+.btnBook{
+    position: absolute;
+    /* left:35%; */
+
+    padding: 15%;
+    
+}
+
+
+/* Custom Navigation */
+.custom-navbar{
+    padding: 18px 20px;
+}
+.navbar-brand{
+    padding:2px 10px;
+    border: 2px solid #28495c;
+    border-radius: 22px;
+    color: #28495c;
+    transition: .5s all ease;
+}
+.navbar-brand:hover{
+    background-color: #28495c ;
+    color:#fff;
+}
+
+.active .nav-link {
+    color:#E16C63;
+}
+.nav-link{
+    text-transform: uppercase;
+    margin: .5rem 2rem;
+    font-size: 15px;
+    transition: .5s all ease;
+    font-weight: 500;
+}
+
+.nav-link:hover{
+    color:#E16C63;
+}
+
+/* Caret Down */
+.caret-down{
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    animation: animate 1s linear infinite;  
+}
+.caret-down img{
+    width: 100px;
+    display: block;
+}
+@keyframes animate {
+    0%{
+        padding: 10px 0;
+        opacity: 1;
+    }
+    100%{
+        opacity: .5;
+        padding-top: 1rem;
+        
+    }
+}
+
+/* About Section */
+.intro, .testimonials, #connected{
+    background-color: rgb(247, 214, 204);
+    
+}
+.intro{
+    padding-top: 1%;
+}
+.testimonials{
+    height: 40vh;
+}
+.beauty{
+    text-align: center;
+}
+
+.card-text{
+    font-size: 2.3rem;
+    text-align: center;
+}
+
+/* OffCanvas Menu */
+#offCanvas{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 0px;
+    z-index: 15;
+    padding-top: 24px;
+    height: 100%;
+    overflow: auto;
+    /* overflow-x: hidden; */
+    background: #ee8276;
+  
+}
+
+#offCanvas .navbar-brand{
+    padding: 2px 10px;
+    border: 2px solid #fff;
+    border-radius: 22px;
+    color: #fff;
+}
+#offCanvas .navbar-brand:hover{
+    background-color: #fff;
+    color:#244B5F;
+
+}
+#offCanvas ul li a{
+    color: #fff;
+    transition: .5s all ease;
+
+}
+#offCanvas ul li a:hover{
+    color:#000;
+}
+
+#togglerButton{
+    transition: .5s all ease;
+    border:none;
+    border-color: white;
+    
+    box-shadow: none !important;
+
+}
+#toggleIcons{
+    width: 35px;
+    transform: rotate(0);
+    transition: .5s all ease;
+    
+}
+/* Floating Social Media Icons CSS */
+.icons{
+    top:50%;
+    left:0;
+    transform: translateY(-50%);
+    position: fixed;
+    z-index: 100;
+}
+.icons ul{
+    padding: initial;
+}
+.icons ul li{
+    height: 50px;
+    width: 40px;
+    list-style-type: none;
+    padding-left: 40%;
+
+}
+.fav-icons{
+    color:black ;
+    
+}
+
+.fa-facebook:hover{
+    color:#3b5998;
+    font-size: 2em;
+
+}
+.fa-instagram:hover {
+    color: transparent;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-size: 2em;
+  }
+.fa-twitter:hover{
+    color: #00acee;
+    font-size: 2em;
+}
+
+
+
+.testimonial-text{
+    text-align: center;
+    color:rgb(22, 21, 21);
+    padding: auto;
+}
+.testimonial-title{
+    text-align: center;
+    padding-bottom: 1%;
+}
+.reviewer, .expert-text{
+    text-align: center;
+}
+.expert-pics{
+ 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#service{
+    padding: 3%;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+#connected{
+    height:20vh;
+    text-align: center;
+    padding: 2rem;
+}
+#connected table{
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+}
+@media screen and (min-width: 1100px) {
+    header{
+        height:90vh;
+        display: block;
+       
+        background-size: cover;
+        
+   
+    }
+}
+
+.expert-text{
+    font-size: 1rem;
+}
+.card-img-top {
+    
+    width: 50%;
+    height: 22vh;
+    object-fit: cover;
+}
+
+
+.navbar-custom  {
+    color: black;
+
+}
+
+#footer{
+    background-color: rgb(31, 30, 30);
+    color:white;
+    height:5vh;;
+}
+.final-icons i{
+    color:#000;
+}
+@media screen and (min-width: 600px) {
+    .main {
+        position: relative; 
+        height: 95vh;
+    }
+    .main .textbox{
+        right:20%;
+    }
+    .main .textbox h1{
+        font-size: 6rem;
+    }
+    .main .textbox .btnBook{
+        padding-top: 5%;;
+    }
+    .icons ul li{
+        margin-top: 60%;
+        font-size: 2em;
+    }
+   
+    .icons{
+        padding-left: 2%;
+    }
+
+}

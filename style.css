@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Pattaya&family=Poppins&family=Roboto&display=swap');
+header{
+    background-image: url(./photos/transCover.png);
+    height:50vh;
+    background-size: cover;
+    /* opacity: calc(50%); */
+}
+
+.body{
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1px;
+}
+
+/* smooth scroll */
+html{
+    scroll-behavior: smooth;
+}
+.intro, .testimonials{
+    background-color: rgb(247, 214, 204);
+    
+}
+.intro, #service{
+    padding: 5%;
+}
+.testimonials{
+    height: 40vh;
+}
+.beauty{
+    text-align: center;
+}
+.card-text{
+    text-align: center;
+}
+/* -----------------Navigation Bar---------------- */
+
+.custom.bar{
+    padding: 18px 20px;
+    
+}
+
+.active .nav-link {
+    color:#E16C63
+}
+.nav-link{
+    text-transform: uppercase;
+    padding: .5rem 2rem;
+    font-size: 16px;
+    transition: .5s all ease;
+}
+.nav-link:hover{
+    color:#E16C63
+}
+.card-text{
+    font-size: 2.3rem;
+}
+.testimonial-text{
+    text-align: center;
+    color:rgb(22, 21, 21);
+    padding: auto;
+}
+.testimonial-title{
+    text-align: center;
+    padding-bottom: 5%;
+}
+.reviewer, .expert-text{
+    text-align: center;
+}
+.expert-pics{
+ 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Floating Social Icons CSS */
+.icons{
+    top:50%;
+    left:0;
+    transform: translateY(-50%);
+    position: fixed;
+    z-index: 100;
+}
+.icons ul{
+    padding: initial;
+}
+.icons ul li{
+    height: 50px;
+    width: 40px;
+    list-style-type: none;
+    padding-left: 40%;
+    
+    /* margin-top: 5px; */
+}
+.fav-icons{
+    color:black ;
+    transform: rotateY(0deg);
+}
+
+
+.icons ul li:hover {
+    transform: rotate(720deg);
+}
+.fa-facebook:hover{
+    color:#3b5998;
+    font-size:2em;
+    transform: rotate(720deg);
+}
+.fa-instagram:hover {
+    color: transparent;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-size:2em;
+  }
+.fa-twitter:hover{
+    color: #00acee;
+    font-size:2em;
+}
+
+
+
+@media screen and (min-width: 1100px) {
+    header{
+        height:90vh;
+        display: block;
+       
+        background-size: cover;
+        
+   
+    }
+}
+
+.expert-text{
+    font-size: 1rem;
+}
+.card-img-top {
+    
+    width: 50%;
+    height: 22vh;
+    object-fit: cover;
+}
+
+
+.navbar-custom  {
+    color: black;
+
+}
+
+#footer{
+    background-color: rgb(31, 30, 30);
+    color:white;
+    height:10vh;
+}
+.final-icons i{
+    color:#fff;
+}
+@media screen and (min-width: 600px) {
+    .icons ul li{
+        margin-top: 60%;
+    }
+    .fa-facebook{
+        font-size: 2em;
+    }
+    .fa-instagram{
+        font-size: 2em;
+    }
+    .fa-twitter{
+        font-size: 2em;
+    }
+    .icons{
+        padding-left: 2%;
+    }
+    .fa-facebook:hover{
+       
+        font-size:3em;
+        
+    }
+    .fa-instagram:hover {
+       
+        font-size:3em;
+      }
+    .fa-twitter:hover{
+      
+        font-size:3em;
+    }
+    .cover{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+    }
+    .testimonials{
+        height: 50vh;
+    }
+    .testimonial-text{
+        
+        font-size: 1.2rem;
+        
+    }
+    .carousel-item{
+        padding: 10%;
+    }
+    .testimonial-title{
+        padding-bottom: 2%;
+    }
+}

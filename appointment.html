@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make an Appointment</title>
+    <link rel="stylesheet" href="./styleBooking.css">
+</head>
+<body>
+    <div>
+    <form action="SEND ADDRESS" id="ft-form" method="POST" accept-charset="UTF-8">
+        <fieldset>
+          <legend>For Customer</legend>
+          <label>
+            Name
+            <input type="text" name="name" required>
+          </label>
+          <div class="two-cols">
+            <label>
+              Email address
+              <input type="email" name="email" required>
+            </label>
+            <label>
+              Phone number
+              <input type="tel" name="phone">
+            </label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Appointment request</legend>
+          <div class="two-cols">
+            <label>
+              Date
+              <input type="date" name="Appointment request" required>
+            </label>
+            
+          </div>
+          <div class="inline">
+            <label>
+              <input type="hidden" name="Morning desired" value="no">
+              <input type="checkbox" name="Morning desired" value="yes">
+              10 AM
+            </label>
+            <label>
+              <input type="hidden" name="Afternoon desired" value="no">
+              <input type="checkbox" name="Afternoon desired" value="yes">
+              10:30 AM
+            </label>
+            <label>
+              <input type="hidden" name="Morning desired" value="no">
+              <input type="checkbox" name="Morning desired" value="yes">
+              11 AM
+            </label><label>
+              <input type="hidden" name="Morning desired" value="no">
+              <input type="checkbox" name="Morning desired" value="yes">
+              11:30 AM
+            </label><label>
+              <input type="hidden" name="Morning desired" value="no">
+              <input type="checkbox" name="Morning desired" value="yes">
+              12 AM
+            </label><label>
+              <input type="hidden" name="Morning desired" value="no">
+              <input type="checkbox" name="Morning desired" value="yes">
+              12:30 AM
+            </label><label>
+              <input type="hidden" name="Morning desired" value="no">
+              <input type="checkbox" name="Morning desired" value="yes">
+              1 PM
+            </label>
+            <label>
+              <input type="hidden" name="Morning desired" value="no">
+              <input type="checkbox" name="Morning desired" value="yes">
+              1:30 PM
+            </label>
+            <label>
+              <input type="hidden" name="Morning desired" value="no">
+              <input type="checkbox" name="Morning desired" value="yes">
+              2:30 PM
+            </label><label>
+              <input type="hidden" name="Morning desired" value="no">
+              <input type="checkbox" name="Morning desired" value="yes">
+              3:30 PM
+            </label><label>
+              <input type="hidden" name="Morning desired" value="no">
+              <input type="checkbox" name="Morning desired" value="yes">
+              4:00 PM
+            </label>
+            <label>
+              <input type="hidden" name="Morning desired" value="no">
+              <input type="checkbox" name="Morning desired" value="yes">
+              4:30 PM
+            </label><label>
+              <input type="hidden" name="Morning desired" value="no">
+              <input type="checkbox" name="Morning desired" value="yes">
+              5:00 PM
+            </label>
+            <label>
+              <input type="hidden" name="Morning desired" value="no">
+              <input type="checkbox" name="Morning desired" value="yes">
+              5:30 PM
+            </label>
+            <label>
+              <input type="hidden" name="Morning desired" value="no">
+              <input type="checkbox" name="Morning desired" value="yes">
+              6:00 PM
+            </label>
+            <label>
+              <input type="hidden" name="Morning desired" value="no">
+              <input type="checkbox" name="Morning desired" value="yes">
+              6:30 PM
+            </label>
+          </div>
+          <select>
+            <option value="">Anyone</option>
+            <option value="">Natalie</option>
+            <option value="">Remy</option>
+            <option value="">Lanie</option>
+
+          </select>
+          <p>Confirmation requested by</p>
+          <div class="inline">
+            <label>
+              <input type="radio" name="Confirmation requested by" value="email" checked>
+              Email
+            </label>
+            <label>
+              <input type="radio" name="Confirmation requested by" value="phone">
+              Phone call
+            </label>
+          </div>
+        </fieldset>
+        
+        <div class="text-area">
+            <h2 style="font-size: 1.5rem; font-weight:bold;">Which service do you want?</h2>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+        </div>
+        <div class="btns">
+            
+            <input type="text" name="_gotcha" value="" style="display:none;">
+            <input type="submit" value="Submit request">
+          </div>
+      </form>
+    </div>
+</body>
+</html>
